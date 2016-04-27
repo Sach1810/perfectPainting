@@ -1,3 +1,5 @@
+// ********** CLOCK **********
+
 function startTime() {
     var today = new Date();
     var h = today.getUTCHours();
@@ -6,7 +8,9 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     $('#clock').html(h + ":" + m + ":" + s);
+    
     var t = setTimeout(startTime, 500);
+
 }
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
@@ -50,5 +54,7 @@ console.log(now + millisec);
   h = h % 24;
   console.log(d +":" + h +":" + m+":"+ s );
 };
+
+startTime();
 
 

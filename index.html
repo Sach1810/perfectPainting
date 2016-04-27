@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" href="images/branding/favicon.png"/>
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700,500' rel='stylesheet' type='text/css'>
 </head>
-<body onload="startTime()">
+<body>
 <nav id="mobile-nav">
     <ul id="mobile-links">
       <li><a href="#" ontouchend="this.onclick=fix" class="auctions-link">Auctions</a></li>
@@ -71,7 +71,8 @@
 </div>
 <!-- ***** Handlebars ***** -->
 <script id="auction-template" type="text/x-handlebars-template"> 
-<div class="individual-listing">{{name}}</div>
+<div class="individual-listing">{{name}}
+<div class="timer"></div> </div>
 </script> 
 <!-- ****** NPM LINKS ***** -->
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>

@@ -8,7 +8,6 @@ var AppView = Backbone.View.extend({
 
   initialize: function(){
     this.listenTo(this.model.get('auctions'), 'add', this.appendAuctions)
-
   },
 
   _endTime: function(){
@@ -25,7 +24,7 @@ var AppView = Backbone.View.extend({
 
     return endTime
   },
-  
+
   collectAuctionData: function(){
     var name = $('#artists-name').val();
 
