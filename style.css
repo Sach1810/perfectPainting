@@ -1,0 +1,105 @@
+* {
+  margin:0;
+  padding:0;
+    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+nav {
+  background-color: #fff;
+  position: fixed;
+}
+
+nav a {
+  color:#161616;
+}
+
+nav a:hover {
+  color: #F46E00;
+}
+
+.logo {
+  height: 60px;
+  padding-left: 3vw;
+}
+
+#links-container ul:first-child {
+  padding-left:15vw;
+}
+
+.listings {
+  display:none; 
+  padding-top:15vh;
+  width:100%;
+  height: 100vh;
+  background-image: url("images/gallery.jpeg");
+   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.individual-listing {
+  background-color:#fff;
+  margin:0 auto;
+  border: 6vh solid #161616 ; 
+  height:40vh;
+  width:70vw;
+}
+
+.sellers {
+  padding-top:15vh;
+  width:100%;
+  height: 100vh;
+  background-image: url("images/artist-background.jpeg");
+   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.seller-input {
+  margin: 0 auto;
+  background-color: #fff;
+  width: 60vw;
+  border-radius:5px;
+  border: solid 1px #161616;
+}
+
+.seller-input form {
+  text-align:center;
+  padding: 4vh 0;
+}
+
+.seller-input input {
+  width: 60%;
+}
+
+.seller-input select {
+  width: 60%;
+}
+
+.seller-input textarea {
+  margin:1px auto;
+  height:60px;
+  border: solid 1px lightgray;
+  width:60%;
+  text-align:left;
+}
+
+.seller-input button {
+  width:60%;
+
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
